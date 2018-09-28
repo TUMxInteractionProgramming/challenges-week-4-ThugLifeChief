@@ -18,6 +18,7 @@
 
     <!-- #6 #external #action-->
     <script src="js/channels.js"></script>
+    <script src="js/messages.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -167,6 +168,8 @@
     <!-- #5 #smileys #insert the chat-bar -->
     <div id="chat-bar"> <!-- #6 #smile #show the menu on click -->
         <button id="emojis-button" onclick="toggleEmojis()"><img src="http://ip.lfe.mw.tum.de/sections/smile-o.png" alt="Smiley"></button>
+        <input id="message-input" type="test" maxlength="140" placeholder="Message...">
+        <button id="send-message" onclick="sendMessage()"><i class="fas fa-arrow-right channel-icon"></i></button>
         <div id="emojis">&#x1F601; &#x1F602; &#x1F603; &#x1F604; &#x1F605; &#x1F606; &#x1F607;</div>
     </div>
 </div>

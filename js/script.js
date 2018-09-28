@@ -60,3 +60,16 @@ function toggleEmojis() {
     /* $('#emojis').show(); // #show */
     $('#emojis').toggle(); // #toggle
 }
+
+// message bar
+function sendMessage() {
+   var inputmessage = new Message($('#message-input').val());
+   console.log(Message);
+   var messagestring = createMessageElement(inputmessage);
+   $('#messages').append(messagestring);
+   $('#message-input').val('');
+}
+
+function createMessageElement(messageObject){
+   return '<div class="message"><h3><a href="http://w3w.co/'+messageObject.createdBy+'" target="_blank"><strong>'+messageObject.createdBy+'</strong></a>'+messageObject.createdOn+' <em>:expiresIn: min. left</em></h3><p>'+messageObject.text+'</p><button>+5 min.</button></div>' 
+}

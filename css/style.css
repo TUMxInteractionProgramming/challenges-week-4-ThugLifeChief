@@ -183,10 +183,20 @@ li.selected {
 
 /* #5 CHAT BAR */
 
+#chat-bar {
+    display:flex;
+    justify-content: space-between;
+}
+
 #chat-bar button {
     /* #5 #smileys #override button styles. We set the chat bar to appear like a tab-bar above. This overrides the tab bar's button scaling */
     width: auto;
     flex-grow: 0;
+}
+
+#chat-bar input {
+    width:100%;
+    border:none;
 }
 
 #emojis {
